@@ -18,17 +18,20 @@ import java.util.concurrent.TimeUnit;
 public class SignUp1Test
 {
     public static  SignUp1 appjava = new SignUp1();
+    static String aidee = null;
 
     @Test
     public void field_FirstNameIsPresent() {
-        boolean exist = SignUp1.presentOrNot("id_f_title");
+        aidee = "id_f_title";
+        boolean exist = SignUp1.presentOrNot(aidee);
         Assert.assertTrue(exist, "MEME");
         SignUp1.close();
 
     }
 
     @Test
-    public void field_LastNameIsPresent() {
+    public void field_LastNameIsPresent()
+    {
         boolean exist = SignUp1.presentOrNot("id_l_tditssle");
 
         Assert.assertTrue(exist, "BEBE");
