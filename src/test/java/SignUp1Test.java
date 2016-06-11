@@ -23,6 +23,7 @@ public class SignUp1Test
     public void field_FirstNameIsPresent() {
         boolean exist = SignUp1.presentOrNot("id_f_title");
         Assert.assertTrue(exist, "MEME");
+        SignUp1.close();
 
     }
 
@@ -31,6 +32,7 @@ public class SignUp1Test
         boolean exist = SignUp1.presentOrNot("id_l_tditssle");
 
         Assert.assertTrue(exist, "BEBE");
+        SignUp1.close();
 
     }
 
