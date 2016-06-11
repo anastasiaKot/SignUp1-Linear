@@ -20,11 +20,17 @@ public class SignUp1Test
     public static  SignUp1 appjava = new SignUp1();
 
     @Test
-    public void test001() {
-        boolean lala;
-        lala = appjava.presentOrNot("id_f_title");
+    public void field_FirstNameIsPresent() {
+        boolean exist = SignUp1.presentOrNot("id_f_title");
+        Assert.assertTrue(exist, "MEME");
 
-        Assert.assertTrue(lala, "kjdksa");
+    }
+
+    @Test
+    public void field_LastNameIsPresent() {
+        boolean exist = SignUp1.presentOrNot("id_l_tditssle");
+
+        Assert.assertTrue(exist, "BEBE");
 
     }
 
