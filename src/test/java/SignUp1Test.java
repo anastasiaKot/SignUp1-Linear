@@ -38,6 +38,17 @@ public class SignUp1Test
         SignUp1.close();
 
     }
+    @Test
+    public void field_EmailIsPresent()
+    {
+        boolean exist = SignUp1.presentOrNot("id_l_tditssle");
+
+        Assert.assertTrue(exist, "BEBE");
+        SignUp1.close();
+
+    }
+
+
 
 
 
